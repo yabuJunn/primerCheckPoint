@@ -28,7 +28,7 @@ class characterCard extends HTMLElement {
             console.log("Evento")
             console.log(this.properties.alternatenames)
             
-            if(this.properties.alternatenames === []) {
+            if(this.properties.alternatenames.length === 0) {
                 this.properties.alternaNameShow = "No tiene nombres alternativos"
             } else {
                 if (this.properties.alternatenames.length === this.properties.index) {
